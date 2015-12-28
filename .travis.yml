@@ -27,7 +27,7 @@ before_install:
   - luarocks install luajson
 
 script:
-  - lunit.sh lunitSentimentAPITest.lua
+  - lunit lunitSentimentAPITest.lua
 
 after_success:
   - coveralls -b .. -r .. -i ./src --dump c.report.json
