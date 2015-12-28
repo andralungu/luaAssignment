@@ -25,6 +25,7 @@ before_install:
   - luarocks install lunit
   - luarocks install luasocket
   - luarocks install luajson
+  - luarocks install lualogging
 
 script:
   - lunit lunitSentimentAPITest.lua
